@@ -44,11 +44,7 @@ class Tag(models.Model):
     name = models.CharField(max_length=255)
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL,
-<<<<<<< HEAD
         on_delete=models.CASCADE
-=======
-        on_delete=models.CASCADE,
->>>>>>> a1f688f3ab6cf1334a9f292ded1f54c8b724c840
     )
 
     def __str__(self):
